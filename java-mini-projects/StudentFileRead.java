@@ -10,8 +10,10 @@ public class StudentFileRead  {
     public static void main(String[] args)
     {
         //user input  from file
+
+        System.out.print(" Select the file containing your data ?");
         
-        TextIO.readFile("testdata.txt"); 
+        TextIO.readUserSelectedFile(); 
 
         // name input  from file
         String StudentNames = TextIO.getln();
@@ -28,12 +30,12 @@ public class StudentFileRead  {
  
        System.out.printf("""
                                             
-                                The names of the  student are %s.
-                                the student’s average grade is %1.3f.
+                         The names of the  student are %s.
+                         the student’s average grade is %1.3f.
                         
                         %n""",
-                                 StudentNames,
-                                 average 
+                         StudentNames,
+                         average 
                         );
    
      }
